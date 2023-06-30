@@ -11,6 +11,7 @@ connectDB();
 
 const app = express();
 
+//In order to be able to get the data from the request body, we need to add some middleware 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
